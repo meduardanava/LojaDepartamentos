@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LancamentoPedido"
+    android:orientation="vertical"
+    android:padding="10sp">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cliente:"
+                android:textSize="15dp"
+                android:layout_marginTop="20sp"
+                android:layout_marginBottom="5sp"/>
+
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/spListaCliente"
+                android:layout_marginTop="5sp"
+                android:layout_marginBottom="10sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Item:"
+                android:textSize="15dp"
+                android:layout_marginBottom="5sp"/>
+
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/spListaItem"
+                android:layout_marginTop="5sp"
+                android:layout_marginBottom="10sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvErroItem"
+                android:text="Um item deve ser selecionado"
+                android:visibility="gone"
+                android:layout_gravity="right"
+                android:textColor="@android:color/holo_red_light"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Quantidade"
+                android:textSize="15dp"
+                android:layout_marginBottom="5sp"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/edQuantidade"
+                android:hint="Digite a quantidade"
+                android:layout_marginBottom="10sp"/>
+
+            <ImageButton
+                android:id="@+id/btAddPedido"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ic_action_name"
+                android:layout_gravity="right"
+                android:layout_marginTop="10sp"
+                android:layout_marginRight="10sp"/>
+
+            <AutoCompleteTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvListaPedido"
+                android:layout_marginBottom="10sp"
+                android:visibility="invisible"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Forma de Pagamento"
+                android:textSize="15dp"
+                android:layout_marginBottom="10sp"/>
+            
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/rgPagamento"
+                android:orientation="horizontal"
+                android:layout_marginBottom="10sp">
+
+                <RadioButton
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/rbAvista"
+                    android:text="Á vista"/>
+
+                <RadioButton
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/rbAprazo"
+                    android:text="Á prazo"/>
+
+            </RadioGroup>
+            
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvValores"
+                android:textSize="15dp"
+                android:layout_marginBottom="30sp"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btFinalizarPedido"
+                android:text="Finalizar Pedido"
+                android:textSize="15dp"
+                android:layout_gravity="right"
+                android:layout_marginRight="15sp"
+                android:layout_marginBottom="10sp"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>

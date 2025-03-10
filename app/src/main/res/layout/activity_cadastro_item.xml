@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CadastroItem"
+    android:orientation="vertical"
+    android:padding="10sp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Código do Item:"
+        android:textSize="15dp"
+        android:layout_marginTop="20sp"
+        android:layout_marginBottom="5sp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/edCodigoItem"
+        android:hint="Digite o código do item"
+        android:layout_marginBottom="10sp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvErroCodItem"
+        android:text="Um código para o item deve ser informado(maior que zero)"
+        android:visibility="gone"
+        android:layout_gravity="right"
+        android:textColor="@android:color/holo_red_light"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Descrição do Item:"
+        android:textSize="15dp"
+        android:layout_marginBottom="5sp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/edDescricaoItem"
+        android:hint="Digite a descrição do item"
+        android:layout_marginBottom="10sp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvErroDescItem"
+        android:text="Uma descrição para o item deve ser informado"
+        android:visibility="gone"
+        android:layout_gravity="right"
+        android:textColor="@android:color/holo_red_light"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Valor Unitário do Item:"
+        android:textSize="14dp"
+        android:layout_marginBottom="5sp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/edValorUnitario"
+        android:hint="Digite o valor unitário do item:"
+        android:layout_marginBottom="10sp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvErroValorItem"
+        android:text="Um valor para o item deve ser informado(maior que zero)"
+        android:visibility="gone"
+        android:layout_gravity="right"
+        android:textColor="@android:color/holo_red_light"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SALVAR"
+        android:textSize="18dp"
+        android:id="@+id/btSalvarItem"
+        android:layout_gravity="right"
+        android:layout_marginRight="15sp"
+        android:layout_marginBottom="20sp"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:layout_margin="10sp"
+                android:id="@+id/tvListaItens"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
