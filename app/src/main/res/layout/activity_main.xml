@@ -26,4 +26,13 @@
         android:textSize="17sp"
         android:id="@+id/btCadastroItem"/>
 
+    <Button
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="10dp"
+        android:text="Finalizar Pedido"
+        android:textSize="17sp"
+        android:id="@+id/btFinalizarPedido"/>
+
 </LinearLayout>
